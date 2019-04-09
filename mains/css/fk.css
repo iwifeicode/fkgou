@@ -1,0 +1,75 @@
+@charset "utf-8";
+/* CSS Document */
+
+.margin{width:1200px;margin:0 auto;}
+
+.dingbu{position: fixed;left: 13px;bottom: 30px;display: none;}
+
+#top{height: 40px;background-image: url(../images/top.png);}
+#top .top-l{line-height: 40px;float: left;}
+#top .top-l span{font-size: 12px;color:#878787;margin-right: 22px;}
+#top .top-l .spans a{color:#289C66;}
+
+#top .top-r{line-height: 40px;}
+#top .top-r ul{}
+#top .top-r ul li{float: right;}
+#top .top-r ul li a{color: #878787;}
+#top .top-r ul li a:hover{color: #333333;}
+#top .top-r ul li span{margin: 0 14px;color: #DDDDDD;}
+
+
+	
+/* .search-res{position: absolute;top: 100%;left: 0;width: 480px;border: 1px solid #b6b6b6;border-top: none;display: block;} */
+
+
+
+
+#header {padding-top: 15px;background: #fff;position: relative;}
+#header .margin{overflow: hidden;}
+#header .header-top .logo {float: left;}
+#header .header-top form {float: left;margin-left: 200px;}
+#header .header-top form #list{position: absolute;top:56px;z-index:1;width: 394px;background: #000000;color: #fff;}
+#header .header-top form #list li{list-style-type: none;line-height: 20px;padding: 2px 5px;border-bottom: 1px solid #b6b6b6;}
+#header .header-top form #list li:hover{background: pink}
+#header .header-top form input {float: left;margin-right: 5px}
+#header .header-top form input.search-all {width: 358px;height: 36px;border: 2px solid #2c9c69;padding: 0 16px}
+#header .header-top form input.search-product,#header form input.search-store {width: 96px;height: 40px;font: 700 15px/40px "";background: #2c9c69;color: #fff;border: 0}
+#header .header-top form p {font: 12px/30px ""}
+#header .header-top form p a:hover{color: #2C9C69;}
+#header .header-top form p span {margin: 0 10px;color: #B57E7F;}
+#header .header-top .shoopCar {float: left;border: 1px solid #666;color: #666;background: #f7f7f7 url(../images/shopcar.jpg) no-repeat 10px center;text-indent: 38px;width: 138px;height: 38px;border-radius: 3px;margin-left: 30px;font: 16px/38px ""}
+
+#nav{margin-top: 16px;}
+#nav .margin{overflow: hidden;}
+#nav .clas{float: left;width: 200px;height: 44px;background: #2c9c69;text-align: center;color: #fff;font: 16px/44px "";}
+#nav .clas span{margin-left:46px;}
+#nav .lists{float: left;}
+#nav .lists ul{font: 16px/40px "";}
+#nav .lists ul li{float: left;margin: 0 40px;color: #666;}
+#nav .lists ul li a:hover{color:#2C9C69;}
+#nav .lists ul span{float: left;color: #CCD6E3;}
+
+#footer{margin-top: 60px;border-top: 1px solid #DDDDDD;background: #fff;}
+#footer .friendship{}
+#footer .friendship ul{overflow: hidden;}
+#footer .friendship ul li{float: left;}
+#footer .friendship ul li h4{font-size: 18px;margin: 27px 122px 28px 0;}
+#footer .friendship ul li a{display: block;font-size: 12px;margin-bottom: 15px;}
+#footer .friendship ul li a:hover{color: #000;}
+#footer .last{text-align: center;border-top: 2px solid #DDDDDD;padding: 26px 0;color: #666666;}
+#footer .last a:hover{color: #000;cursor: pointer;}
+#footer .last span{margin: 0 13px;}
+#footer .last p.tep{margin-top: 12px;}
+#footer .last p{font: 12px/28px "";}
+
+/* 楼层 */
+.loucen{position: fixed;height: 390px;width: 46px;background-color: #fff;top:40%;transform:translateY(-50%);}
+.loucen li{width: 46px;height: 56px;border: 1px solid #eee;text-align: center;font-size: 14px;padding: 9px 2px;box-sizing: border-box;cursor: pointer;}
+.loucen li:hover{color: aqua;}
+
+
+
+
+
+
+
