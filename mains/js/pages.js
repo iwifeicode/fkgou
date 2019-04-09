@@ -119,11 +119,7 @@ class Cookie {
 
 		//获取元素
 		var oSbox = document.querySelector(".sbox");
-		// console.log(oSbox)
-		// var oPan = $(".sbox").children("img").eq(4)[0];
-		// var oPan = oSbox.children[4]
 		var oPan = document.querySelector(".tesp")
-		// console.log(oPan)
 		var oBbox = document.querySelector(".bbox");
 		var aImg = document.querySelectorAll(".bbox img");
 
