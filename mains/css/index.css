@@ -124,6 +124,8 @@ body{background: #f4f4f4;}
 #content .specialty .specialty-r .title-list{border-bottom: 1px solid #eee;overflow: hidden}
 #content .specialty .specialty-r .title-list a{display: block;float: left;height: 40px;width: 24.9%;font: 16px/40px "";color: #888;text-align: center}
 #content .specialty .specialty-r .title-list a:hover{background: #2C9B69;color: #fff;}
+
+
 #content .specialty .specialty-r .product-desc{overflow: hidden;border-bottom: 1px solid #ddd}
 #content .specialty .specialty-r .product-desc li{float: left;border-top: 1px solid #ddd;height: 259px;width: 24.9%;background-color: #fff;box-sizing: border-box;padding: 14px 0}
 #content .specialty .specialty-r .product-desc li .specialty-detials{padding: 0 14px;box-sizing: border-box;border-right: 1px solid #ddd;overflow: hidden;}
@@ -136,8 +138,8 @@ body{background: #f4f4f4;}
 #content .specialty .specialty-r .product-desc li .specialty-detials .add-cart s{text-decoration: line-through;font-size: 12px;float: left;margin-left: 5px;color: #ccc}
 #content .specialty .specialty-r .product-desc li .specialty-detials .add-cart .cart{float: right;width: 30px;height: 30px;background: #ffa333 url(../images/cart.png) no-repeat center}
 
-
-
+#content .specialty .specialty-r .carka{display: none;}
+#content .specialty .specialty-r .carka:nth-child(2){display: block;}
 
 
 

@@ -169,8 +169,23 @@ Ran.prototype.cookies = function() {
 	})
 }
 
-
-
-
-
 new Ran()
+
+//选项卡
+//获取元素
+		var aA = document.querySelectorAll(".li a");
+		var acarka = document.querySelectorAll(".carka");
+		//给所有的li加点击事件   因为有多个li所有要循环遍历
+		for(var i=0;i<aA.length;i++){
+			aA[i].index = i;//索引不能用i,点击事件里拿不到for循环上的计数器，在能拿到的时候先存在自定义属性里
+			aA[i].onclick = function(){
+				for(var j=0;j<aA.length;j++){
+					aA[j].className = "";//给所有的className设置为空
+					acarka[j].style.display = "none";//让所有的p隐藏
+
+				}
+				this.className = "active";//在给它点击点击//active点击后的状态
+				acarka[this.index].style.display = "block";//在设置给当前显示
+			}
+		}
+
