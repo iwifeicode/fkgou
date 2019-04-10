@@ -61,7 +61,7 @@
 		<!-- 购物车 -->
 		<div id="car">
 			<div class="margin">
-				<table border="1" cellspacing="0" width="1100" align="center">
+				<table cellspacing="0" width="1100" align="center">
 					<thead>
 						<tr>
 							<th></th>
@@ -88,8 +88,8 @@
 						<tr>
 							<td colspan="2"><input type="checkbox" name="" id="" value="" />全部选中</td>
 							<td align="right">总价：</td>
-							<td>0</td>
-							<td>总数量：0</td>
+							<td id="cont">0</td>
+							<td id="sum">总数量：0</td>
 							<td><em>全部删除</em></td>
 						</tr>
 					</tfoot>
@@ -162,8 +162,9 @@
 		
 	</body>
 	
-	<script src="libs/ajax.3.0.js" type="text/javascript" charset="utf-8"></script>
+	<!-- <script src="libs/ajax.3.0.js" type="text/javascript" charset="utf-8"></script>
 	<script src="libs/cookie.js" type="text/javascript" charset="utf-8"></script>
-	<script src="js/car.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/car.js" type="text/javascript" charset="utf-8"></script> -->
+	<script src="libs/require.js" type="text/javascript"  data-main="js/sum-car.js"></script>
 	
 </html>

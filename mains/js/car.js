@@ -3,6 +3,8 @@ class Car{
 		//1.解析数据
 		this.tbody = options.tbody;
 		this.url = options.url;
+		this.sum=options.sum;
+		this.cont=options.cont;
 		
 		//2.请求数据
 		this.load();
@@ -48,6 +50,18 @@ class Car{
 			}
 		}
 		this.tbody.innerHTML = str;
+		this.getsum();
+	}
+	getsum(){
+		var sum=0;
+		var cont=0;
+		for(var i=0;i<this.goods.length;i++){
+			sum += parseInt(this.goods[i].num)
+			 cont += parseInt((this.goods[i].num)*(this.res[i].price))
+		}
+			this.sum.innerHTML=sum;
+			this.cont.innerHTML=cont;
+		
 	}
 	addEvent(){
 		var that = this;
@@ -56,7 +70,7 @@ class Car{
 		    var target = e.target || e.srcElement;
 		    if(eve.target.nodeName == "EM"){
 				//找到点击商品的货号
-		        that.goods = eve.target.getAttribute("data-index");
+		        that.id = eve.target.getAttribute("data-index");
 				//删除DOM元素
 		        eve.target.parentNode.parentNode.remove();
 				//6.删除cookie中的数据
@@ -66,7 +80,7 @@ class Car{
 		this.tbody.addEventListener("input",function(eve){
 			if(eve.target.type == "number"){
 				that.value = eve.target.value;
-				that.goods = eve.target.parentNode.nextElementSibling.children[0].getAttribute("data-index");
+				that.id = eve.target.parentNode.nextElementSibling.children[0].getAttribute("data-index");
 				
 				that.setCookie();
 			}
@@ -75,7 +89,8 @@ class Car{
 	removeCookie(){
 		//7.找到cookie中的符合条件的数据
 		for(var i=0;i<this.goods.length;i++){
-			if(this.goods[i].goods == this.goods){
+			if(this.goods[i].goods == this.id){
+				
 				break;
 			}
 		}
@@ -96,24 +111,8 @@ class Car{
 
 
 new Car({
+	cont:document.getElementById("cont"),
+	sum:document.getElementById("sum"),
 	tbody:document.getElementById("tbody"),
 	url:"json/data.json"
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

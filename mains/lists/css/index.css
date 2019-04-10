@@ -1,0 +1,49 @@
+#content .specialty{height: 610px;}
+#content .specialty .title {line-height: 50px;overflow: hidden;margin-top: 20px;}
+#content .specialty .title h3 {float: left;font: 700 22px/50px ""}
+#content .specialty .title span {float: right;color: #888;font-size: 14px}
+#content .specialty .specialty-l{width: 285px;height: 560px;background: #2c9c69;position: absolute;}
+#content .specialty .a{width: 285px;height: 560px;background: #F08A2C;position: absolute;}
+#content .specialty .b{width: 285px;height: 560px;background: #4992FE;position: absolute;}
+#content .specialty .c{width: 285px;height: 560px;background: #FEB819;position: absolute;}
+#content .specialty .d{width: 285px;height: 560px;background: #22B2EC;position: absolute;}
+#content .specialty .e{width: 285px;height: 560px;background: #8EC712;position: absolute;}
+#content .specialty .f{width: 285px;height: 560px;background: #E13F6B;position: absolute;}
+#content .specialty .specialty-l h3{width: 218px;margin: 0 auto;font: 26px/80px "";text-align: center;color: #fff;border-bottom: 1px solid #fff}
+#content .specialty .specialty-l .banners{height: 330px;position: absolute;width: 100%}
+#content .specialty .specialty-l .banners .mask{width: 223px;height: 270px;background: rgba(255, 255, 255, .3);border-radius: 5px;margin: 30px auto 0}
+#content .specialty .specialty-l .banners .specialty-banner{width: 200px;height: 270px;border-radius: 5px;background: #fff;position: absolute;left: 0;right: 0;top: 0;bottom: 0;margin: auto}
+#content .specialty .specialty-l .banners .specialty-banner a img{width: 200px;height: 200px;border-radius: 5px;margin-top: 20px;}
+#content .specialty .specialty-l .banners .specialty-banner a img:hover{transform: scale(1.1);}
+#content .specialty .specialty-l .banners .specialty-banner a{position: absolute;display: none}
+#content .specialty .specialty-l .banners .specialty-banner a p{overflow: hidden;text-overflow: ellipsis;text-align: center;width: 130px;font-size: 14px;height: 33px;margin: 25px 35px 0}
+#content .specialty .specialty-l .banners .specialty-banner a:first-child{display: block;}
+#content .specialty .specialty-l .banners .btn input{position: absolute;height: 40px;width: 20px;background: rgba(255, 255, 255, .5);color: #fff;border: 0;font: 24px/40px "";top: 160px;cursor: pointer}
+#content .specialty .specialty-l .banners .btn .specialty-right{right: 0;}
+#content .specialty .specialty-l .banners .specialty-clas{position: absolute;bottom: -149px;width: 100%;background: #5cdba1;height: 124px}
+#content .specialty .specialty-l .banners .a1{position: absolute;bottom: -149px;width: 100%;background: #FCAA6B;height: 124px}
+#content .specialty .specialty-l .banners .b1{position: absolute;bottom: -149px;width: 100%;background: #7FADFE;height: 124px}
+#content .specialty .specialty-l .banners .c1{position: absolute;bottom: -149px;width: 100%;background: #FCCE6F;height: 124px}
+#content .specialty .specialty-l .banners .d1{position: absolute;bottom: -149px;width: 100%;background: #67EBF3;height: 124px}
+#content .specialty .specialty-l .banners .e1{position: absolute;bottom: -149px;width: 100%;background: #D9E747;height: 124px}
+#content .specialty .specialty-l .banners .f1{position: absolute;bottom: -149px;width: 100%;background: #FB7AA1;height: 124px}
+
+#content .specialty .specialty-l .banners .specialty-clas a{display: block;float: left;width: 72px;color: #fff;text-align: center;border: 1px solid #fff;font: 12px/26px "";overflow: hidden;white-space: nowrap;margin: 26px 0 0 16px}
+#content .specialty .specialty-l .banners .specialty-clas a:hover{background: #fff;color: #5cdba1}
+#content .specialty .specialty-r{background: #fff;width: 76.16%;margin: 0 auto;}
+#content .specialty .specialty-r .title-list{border-bottom: 1px solid #eee;overflow: hidden}
+#content .specialty .specialty-r .title-list a{display: block;float: left;height: 40px;width: 24.9%;font: 16px/40px "";color: #888;text-align: center}
+#content .specialty .specialty-r .title-list a:hover{background: #2C9B69;color: #fff;}
+
+
+#content .specialty .specialty-r .product-desc{overflow: hidden;border-bottom: 1px solid #ddd}
+#content .specialty .specialty-r .product-desc li{float: left;border-top: 1px solid #ddd;height: 259px;width: 24.9%;background-color: #fff;box-sizing: border-box;padding: 14px 0}
+#content .specialty .specialty-r .product-desc li .specialty-detials{padding: 0 14px;box-sizing: border-box;border: 1px solid #ddd;overflow: hidden;}
+#content .specialty .specialty-r .product-desc li .specialty-detials img{width: 150px;height: 150px;margin-left: 26px;margin-bottom: 12px;margin-top: 8px;}
+#content .specialty .specialty-r .product-desc li .specialty-detials img:hover{transform: scale(1.1,1.1);transition: all 1s}
+#content .specialty .specialty-r .product-desc li .specialty-detials p:{color: #888;font-size: 12px;height: 27px;overflow: hidden;text-align: center;cursor: pointer;}
+#content .specialty .specialty-r .product-desc li .specialty-detials p:hover{color: #444}
+#content .specialty .specialty-r .product-desc li .specialty-detials .add-cart{line-height: 25px;margin-top: 10px;overflow: hidden;margin-top: 18px;margin-left: 45px;}
+#content .specialty .specialty-r .product-desc li .specialty-detials .add-cart span{color: red;font-size: 18px;float: left}
+#content .specialty .specialty-r .product-desc li .specialty-detials .add-cart s{text-decoration: line-through;font-size: 12px;float: left;margin-left: 5px;color: #ccc}
+#content .specialty .specialty-r .product-desc li .specialty-detials .add-cart .cart{float: right;width: 30px;height: 30px;background: #ffa333 url(../images/cart.png) no-repeat center}

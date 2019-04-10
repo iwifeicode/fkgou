@@ -1,5 +1,9 @@
 #car img {width: 60px;}
-#car em {display: block;width: 100px;line-height: 30px;text-align: center;background: deepskyblue;border-radius: 6px;margin: 0 auto;margin-top: 10px;font-style: normal;cursor: pointer;color: #fff;}
+#car em {display: block;width: 100px;line-height: 30px;text-align: center;color: black;border-radius: 6px;margin: 0 auto;margin-top: 10px;font-style: normal;cursor: pointer;}
 #car input[type="number"] {width: 50px;}
-#car table{font: 18px/24px "";margin-top: 30px;}
+#car table{font: 18px/24px "";margin-top: 30px;border-bottom: 2px solid #CCCCCC ;background: #FCFCFC;}
 #car table tr td{text-align: center;}
+#car #tbody tr{border-bottom: 2px solid #CCCCCC ;margin-bottom: 16px;}
+#car thead tr{border-bottom: 2px solid #CCCCCC ;margin-bottom: 16px;}
+
+

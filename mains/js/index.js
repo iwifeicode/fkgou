@@ -71,8 +71,10 @@ ajaxGet("json/data.json", function(res) {
 	var productDesc = document.querySelector(".product-desc")
 	// console.log(productDesc)
 	productDesc.innerHTML = str;
-})
 
+	
+})
+// 
 //百度搜搜
 function Search() {
 	//			1.选元素,设置url
@@ -188,4 +190,17 @@ new Ran()
 				acarka[this.index].style.display = "block";//在设置给当前显示
 			}
 		}
+
+		//懒加载：
+		var img = document.querySelectorAll(".local-food img");
+		var clientH = document.documentElement.clientHeight;
+		document.onscroll = function(){
+			var t = document.documentElement.scrollTop;
+			for(var i=0;i<img.length;i++){
+				if(clientH + t > img[i].offsetTop + 900){
+					img[i].src = img[i].getAttribute("abc");
+				}
+			}
+		}
+
 
