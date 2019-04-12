@@ -133,7 +133,7 @@ body{background: #f4f4f4;}
 #content .specialty .specialty-r .product-desc li .specialty-detials img:hover{transform: scale(1.1,1.1);transition: all 1s}
 #content .specialty .specialty-r .product-desc li .specialty-detials p:{color: #888;font-size: 12px;height: 27px;overflow: hidden;text-align: center;cursor: pointer;}
 #content .specialty .specialty-r .product-desc li .specialty-detials p:hover{color: #444}
-#content .specialty .specialty-r .product-desc li .specialty-detials .add-cart{line-height: 25px;margin-top: 10px;overflow: hidden;margin-top: 18px;}
+#content .specialty .specialty-r .product-desc li .specialty-detials .add-cart{line-height: 25px;margin-top: 10px;overflow: hidden;margin-top: 18px;cursor: pointer;}
 #content .specialty .specialty-r .product-desc li .specialty-detials .add-cart span{color: red;font-size: 18px;float: left}
 #content .specialty .specialty-r .product-desc li .specialty-detials .add-cart s{text-decoration: line-through;font-size: 12px;float: left;margin-left: 5px;color: #ccc}
 #content .specialty .specialty-r .product-desc li .specialty-detials .add-cart .cart{float: right;width: 30px;height: 30px;background: #ffa333 url(../images/cart.png) no-repeat center}

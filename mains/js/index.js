@@ -54,7 +54,7 @@ ajaxGet("json/data.json", function(res) {
 	for (var i = 0; i < json.length; i++) {
 		// console.log(i)
 		str +=
-			`<li class="list">
+			`<li class="list" index="${json[i].goodsId}">
 							<div class="specialty-detials valign" index=${json[i].goodsId}>
 										<img src="${json[i].src}">
 										<p>${json[i].name}</p>
@@ -71,8 +71,37 @@ ajaxGet("json/data.json", function(res) {
 	var productDesc = document.querySelector(".product-desc")
 	// console.log(productDesc)
 	productDesc.innerHTML = str;
+	// addCar(){
 
-	
+		// console.log($(".list").attr("index"))
+				var that = this;
+				$('.product-desc').on('click','.cart',function(){
+					this.index = $(this).parent().parent().parent().attr("index");
+					this.cookie = $.cookie("cook");
+							if($.cookie("cook") == null){
+									this.cookie = [{id:this.index,num:1}];
+									$.cookie("cook",JSON.stringify(this.cookie));
+								}
+								else{
+									var onoff = true;
+									this.cookie = JSON.parse($.cookie("cook"))
+									this.cookie.forEach((v)=>{
+									if(v.id == this.index){
+										v.num ++;
+										// console.log(v.num)
+										onoff = false;
+									}
+									})
+									if(onoff){
+									this.cookie.push({
+										id:this.index,
+										num:1
+									})
+								}						
+							}
+								$.cookie("cook",JSON.stringify(this.cookie));
+								console.log(JSON.parse($.cookie("cook")))
+					})
 })
 // 
 //百度搜搜

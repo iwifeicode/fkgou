@@ -35,6 +35,7 @@
 #page .page-c .number .btn1{width:18px;height: 14px;border: 1px solid #a7a6ac;margin-bottom: 9px;background: url(../bokimages/t7.png) no-repeat center;}
 #page .page-c .number .btn2{width:18px;height: 14px;border: 1px solid #a7a6ac;background: url(../bokimages/t6.png) no-repeat center;}
 #page .page-c span.tepp{line-height: 30px;font-size: 14px;color: #A19E9C;}
+#page .page-c p.tp{display: inline-block;margin-left: 62px;cursor:pointer;}
 
 #page .page-r{width: 160px;height:410px ;border: 1px solid #ccc;position: absolute;right: 77px;top: 190px;}
 #page .page-r .tp{background: #FCFCFC;border-bottom: 1px solid #ccc;height: 40px;line-height: 40px;padding-left: 12px;}

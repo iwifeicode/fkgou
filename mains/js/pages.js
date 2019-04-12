@@ -28,7 +28,7 @@ class Cookie {
 			// console.log(this.IId == this.res[i].goodsId)
 			if (this.IId == this.res[i].goodsId) {
 				str +=
-					`<div id="pp">
+					`<div id="pp" index="${this.res[i].goodsId}">
 						<p><span>${this.res[i].span1}</span> > <span>${this.res[i].span2}</span> > <span>${this.res[i].span3}</span> > <span>${this.res[i].span4}</span></p>
 					</div>
 						<div class="page-l">
@@ -81,6 +81,7 @@ class Cookie {
 									<input type="button" class="btn2" id="btn2" value="-"/>
 								</div>
 								<span class="tepp">(件)</span>
+								<p class="tp"><img src="img/w5.png"></p>
 							</div>
 					
 							<div class="page-r">
@@ -178,7 +179,63 @@ class Cookie {
 			oPan.style.display = "none";
 			oBbox.style.display = "none";
 		})
+		
+		
+		$(".page-c").children(".tp").on("click",function(){
+			this.id = $(".txt").val();
+			this.pp = $("#pp").attr("index");
+			// console.log(this.pp)
+			this.cookie = $.cookie("cook");
+// 			if($.cookie("cook") == null){
+// 				this.cookie = [{"id":this.pp,"num":this.id}];
+// 				$.cookie("cook",JSON.stringify(this.cookie))
+// 			}else{
+// 				var off = true;
+// 				this.cookie = JSON.parse($.cookie("cook"));
+// 				this.cookie.forEach((v)=>{
+// 					if(v.id == $("#pp").attr("index")){
+// 						v.num = $(".txt").val();
+// 						off = false;
+// 					}
+// 				if(off){
+// 					this.cookie.push({"id":this.pp,"num":this.id});					
+// 				}
+// 				})					
+// 			}
+// 				$.cookie("cook",JSON.stringify(this.cookie));
+// 				console.log(JSON.parse($.cookie("cook")))
+				
+				
+				
+				if($.cookie("cook") == null){
+						this.cookie = [{"id":this.pp,"num":this.id}];
+						$.cookie("cook",JSON.stringify(this.cookie))
+					}
+					else{
+						var onoff = true;
+						this.cookie = JSON.parse($.cookie("cook"))
+						this.cookie.forEach((v)=>{
+						if(v.id == this.pp){
+							v.num = parseInt(v.num);
+							console.log(v.num)
+							v.num += parseInt(this.id);
+							// console.log(v.num)
+							onoff = false;
+						}
+						})
+						if(onoff){
+						this.cookie.push({
+							id:this.pp,
+							num:this.id
+						})
+					}						
+				}
+					$.cookie("cook",JSON.stringify(this.cookie));
+					console.log(JSON.parse($.cookie("cook")))
+		})
+		
 	}
+	
 }
 
 new Cookie();
