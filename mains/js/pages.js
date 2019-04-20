@@ -58,7 +58,7 @@ class Cookie {
 							
 							<div class="page-c">
 								<h2>${this.res[i].name}</h2>
-								<p class="teep"> 散装${this.res[i].number}/罐</p>
+								<p class="teep"> 每册${this.res[i].number}/本</p>
 								<div class="boox">
 									<p class="teeep"><span class="tespan">原价：<s>￥${this.res[i].yuanjia}</s></span><i>商品评价</i></p>
 									<p><span>现价：<em>￥${this.res[i].xianjia}</em></span><i class="tei">${this.res[i].pingjia}条</i></p>
@@ -73,7 +73,7 @@ class Cookie {
 									<span>配送至：</span><i>安徽省 六安市 裕安区<span class="iconfont icon-xiajian"></span> </i> 有货
 								</div>
 								<div class="guige">
-									<span>规格：</span><i>小包装${this.res[i].guige}g/罐</i>
+									<span>规格：</span><i>每册${this.res[i].guige}g/本</i>
 								</div>
 								<div class="number">
 									<input type="text" class="txt" value="0" id="txtt"/>

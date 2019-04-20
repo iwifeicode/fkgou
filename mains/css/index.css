@@ -15,7 +15,7 @@ body{background: #f4f4f4;}
 #main .margin-l ul li .ul{position: absolute;left: 200px;top: -10px;border-right:1px solid #ADADAD ;z-index: 1000;}
 #main .margin-l ul li .ul li{margin: 16px 0 16px 44px;}
 #main .margin-l ul li .ul li h3{margin-bottom: 14px;}
-#main .margin-l ul li .ul li a{color: #888;font-size:14px ;}
+#main .margin-l ul li .ul li a{color: #888;font-size:14px ;font: 14px/28px "";}
 #main .margin-l ul li .ul li a:hover{color: #555;}
 
 
@@ -38,11 +38,11 @@ body{background: #f4f4f4;}
 #main .margin-r .margin-r-t img{width: 90px;height: 90px;display: block;margin-left: 42px;}
 #main .margin-r .margin-r-t p{font-size:14px ;margin: 18px 0 10px 0;}
 #main .margin-r .margin-r-t input{width: 63px;height: 30px;background: #fff;font: 10px/30px "";border: none;border: 1px solid #EEEEEE;cursor: pointer;box-shadow: 0 0 4px #EEEEEE;}
-#main .margin-r .margin-r-t .sbmt1{background:#2C9C69 ;color: #fff;}
-#main .margin-r .margin-r-t .sbmt2{color: #000;}
+#main .margin-r .margin-r-t .sbmt1{background:#2C9C69 ;color: #fff;font-size: 12px;}
+#main .margin-r .margin-r-t .sbmt2{color: #000;font-size: 12px;}
 
 #main .margin-r .margin-r-c{width: 178px;height: 140px;background: #fff;margin-top: 7px;}
-#main .margin-r .margin-r-c h6{font-weight: 100;padding: 6px 5px;}
+#main .margin-r .margin-r-c h6{font-weight: 100;padding: 6px 5px;font-size: 12px;}
 #main .margin-r .margin-r-c p{font-size: 12px;padding: 6px 5px;}
 #main .margin-r .margin-r-c p:hover{color:#2C9C69;cursor: pointer;}
 #main .margin-r .margin-r-c h6 span{float: right;cursor: pointer;}
